@@ -8,6 +8,7 @@
 - **Nome:** Beatriz Carvalho Peixoto
 - **Número:** A104170  
 - **Email Institucional:** a104170@alunos.uminho.pt
+
 ![Fotografia de identificação](foto_identificacao.png)
 
 ## Sobre o repositório
