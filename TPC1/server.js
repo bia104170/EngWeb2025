@@ -167,7 +167,7 @@ http.createServer((req, res) => {
                 var marca = decodeURIComponent(req.url.split("/")[2]) // Extrair o codigo da URL
                 axios.get(`http://localhost:3000/veiculos?marca=${encodeURIComponent(marca)}&_sort=modelo`)
                 .then(resp => {
-                    var veiculos = resp.data // é retornado uma lista 
+                    var veiculos = resp.data 
                     console.log(veiculos)
 
                     var modelosContados = {} //objeto vazio em javascript
