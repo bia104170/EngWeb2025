@@ -16,10 +16,10 @@
 
 
 ## Lista de Resultados
-O ficheiro dataset_reparacoes corresponde ao dataset da oficina de reparações fornecido.
+O ficheiro dataset_reparacoes.json corresponde ao dataset da oficina de reparações fornecido.
 O ficheiro dataset.py gera o dataset da oficina de reparações mas que contém, além da lista de reparações, 
 uma lista com os veículos e outra lista com as intervenções.
-O ficheiro dataset_reparacoes_novo corresponde ao dataset gerado pelo ficheiro dataset,py.
+O ficheiro dataset_reparacoes_novo.json corresponde ao dataset gerado pelo ficheiro dataset,py.
 Por fim, o ficheiro server.js é o servidor criado em Node.js que responde com páginas web em HTML a pedidos HTTP.
 - ![Ficheiro dataset dado](dataset_reparacoes.json)
 - ![Ficheiro gera o dataset](dataset.py)
