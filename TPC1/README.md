@@ -25,3 +25,12 @@ Por fim, o ficheiro server.js é o servidor criado em Node.js que responde com p
 - ![Ficheiro gera o dataset](dataset.py)
 - ![Ficheiro novo dataset](dataset_reparacoes_novo.json)
 - ![Servidor (server.js)](server.js)
+
+## Utilização
+1. **Executar o json-server:** json-server --watch dataset_reparacoes_novo.json
+2. **Executar o servidor:** node server.js
+3. **Página inicial:** http://localhost:1234
+4. **Lista de reparações:** http://localhost:1234/reparacoes
+5. **Lista de intervenções:** http://localhost:1234/intervencoes
+6. **Lista de veículos:** http://localhost:1234/veiculos
+7. **Ver a intervenção R010:** http://localhost:1234/intervencoes/R010
