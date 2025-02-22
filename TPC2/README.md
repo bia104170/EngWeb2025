@@ -10,12 +10,12 @@
 ![Fotografia de identificação](../foto_identificacao.png)
 
 ## Resumo
-- Este trabalho de casa consistiu em construir servidor web em node.js que consome uma API de dados servida pelo json-server e permite a criação de um website para uma escola de música.
-- Esse website contém:
-    i. Uma página principal com as opções de Listar Alunos, Listar Cursos e Listar Instrumentos.
-    ii. A página de alunos que contém uma tabela com a informação dos alunos e cada número de aluno é um link para a página individual do aluno.
-    iii. A página de cursos que contém a informação dos cursos e, clicando no seu ID, obtém-se a página desse curso e a lista de alunos que o frequentam.
-    iv. A página de instrumentos que contém a informação dos instrumentos e, clicando no ID, obtém-se a página do instrumento e a lista de alunos que o tocam.
+1. Este trabalho de casa consistiu em construir servidor web em node.js que consome uma API de dados servida pelo json-server e permite a criação de um website para uma escola de música.
+2. Esse website contém:
+    - Uma página principal com as opções de Listar Alunos, Listar Cursos e Listar Instrumentos.
+    - A página de alunos que contém uma tabela com a informação dos alunos e cada número de aluno é um link para a página individual do aluno.
+    - A página de cursos que contém a informação dos cursos e, clicando no seu ID, obtém-se a página desse curso e a lista de alunos que o frequentam.
+    - A página de instrumentos que contém a informação dos instrumentos e, clicando no ID, obtém-se a página do instrumento e a lista de alunos que o tocam.
 
 
 ## Lista de Resultados
