@@ -15,7 +15,7 @@
     - Uma página principal com as opções de Listar Alunos, Listar Cursos e Listar Instrumentos.
     - A página de alunos que contém uma tabela com a informação dos alunos e cada número de aluno é um link para a página individual do aluno.
     - A página de cursos que contém a informação dos cursos e, clicando no seu ID, obtém-se a página desse curso que contém lista de alunos que o frequentam.
-    - A página de instrumentos que contém a informação dos instrumentos e, clicando no ID, obtém-se a página do instrumento que contém a lista de alunos que tocam esse instrumento.
+    - A página de instrumentos que contém a informação dos instrumentos e, clicando no ID, obtém-se a página do instrumento que contém lista de alunos que tocam esse instrumento.
 
 
 ## Lista de Resultados
@@ -29,7 +29,7 @@
     - '/instrumentos' é a página que contém a tabela com a informação de todos os instrumentos.
     - '/instrumentos/id' onde id é o id do instrumento. Corresponde à página de um instrumento específico e contém a lista dos alunos que tocam esse instrumento.
 3. Em cada página é apresentado um botão "Voltar" que, ao ser clicado, permite voltar à página anterior.
-4. O ficheiro mypages.js contém as várias funções que geram as páginas HTML necessárias ao website. Essas funções permitem listar/visualizar os dados.
+4. O ficheiro mypages.js contém as várias funções que geram as páginas HTML necessárias ao website.
 5. É utilizado o w3.css para dar estilo/beleza a essas páginas.
 - ![db.json](db.json)
 - ![server.js](server.js)
@@ -44,3 +44,5 @@
 5. **Lista de cursos:** http://localhost:1234/cursos
 6. **Lista de instrumentos:** http://localhost:1234/instrumentos
 7. **Ver o curso CB2:** http://localhost:1234/cursos/CB2
+8. **Ver o aluno A32597:** http://localhost:1234/alunos/A32597
+9. **Ver o instrumento I12:** http://localhost:1234/instrumentos/I12
