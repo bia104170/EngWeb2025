@@ -34,7 +34,7 @@
 - ![db.json](db.json)
 - ![server.js](server.js)
 - ![mypages.js](mypages.js)
-- "[w3.css](w3.css)
+- ![w3.css](w3.css)
 
 ## Utilização
 1. **Executar o json-server:** json-server --watch db.json
