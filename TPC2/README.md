@@ -1,0 +1,45 @@
+# Relatório Trabalho de Casa 2
+
+**Data:** 2025-02-22
+
+## Autor
+
+**Nome:** Beatriz Carvalho Peixoto  
+**Número:** A104170  
+
+![Fotografia de identificação](../foto_identificacao.png)
+
+## Resumo
+- Este trabalho de casa consistiu em construir servidor web em node.js que consome uma API de dados servida pelo json-server e permite a criação de um website para uma escola de música.
+- Esse website contém:
+    i. Uma página principal com as opções de Listar Alunos, Listar Cursos e Listar Instrumentos.
+    ii. A página de alunos que contém uma tabela com a informação dos alunos e cada número de aluno é um link para a página individual do aluno.
+    iii. A página de cursos que contém a informação dos cursos e, clicando no seu ID, obtém-se a página desse curso e a lista de alunos que o frequentam.
+    iv. A página de instrumentos que contém a informação dos instrumentos e, clicando no ID, obtém-se a página do instrumento e a lista de alunos que o tocam.
+
+
+## Lista de Resultados
+- O ficheiro db.json corresponde ao dataset da escola de música e consiste no conjunto de dados que servem o website. Através desse dataset foi possível criar o json-server.
+- O ficheiro server.js consiste no servidor em node.js, que utiliza o módulo HTTP para atender a pedidos e respostas. Este servidor consome a API de dados fornecida pelo json-server, o que permite a exibição de páginas HTML com as informações sobre os alunos, cursos e instrumentos. A porta utilizada para os clientes se comunicarem é a porta nº 1234. Foram implementadas várias páginas, tais como:
+    i. '/' que corresponde à página inicial do site. Contém 3 botões principais, um para listar os alunos, outro para listar os cursos e um terceiro para listar os instrumentos.
+    ii. '/alunos' que corresponde a uma tabela com a informação de todos os alunos, ordenados pelo nome. O id do aluno é clicável.
+    iii. '/alunos/id' onde id corresponde ao id do aluno. É a página individual de um aluno com o id indicado.
+    iv. '/cursos' corresponde a uma tabela constituída pela informação dos cursos, onde o id do curso é clicável.
+    v. '/cursos/id' onde id é o id do curso. Corresponde à página de um curso específico, onde é apresentada uma lista dos alunos que frequentam esse curso.
+    vi. '/instrumentos' é a página que contém a tabela com a informação de todos os instrumentos.
+    vii. '/instrumentos/id' onde id é o id do instrumento. Corresponde à página de um instrumento específico e contém a lista dos alunos que tocam esse instrumento.
+- Em cada página é apresentado um botão "Voltar" que, ao ser clicado, permite voltar à página anterior.
+- O ficheiro mypages.js contém as várias funções que geram as páginas HTML necessárias ao website. Essas funções permitem listar/visualizar os dados.
+- É utilizado o w3.css para dar estilo/beleza a essas páginas.
+- ![db.json](db.json)
+- ![server.js](server.js)
+- ![mypages.js](mypages.js)
+
+## Utilização
+1. **Executar o json-server:** json-server --watch db.json
+2. **Executar o servidor:** node server.js
+3. **Página inicial:** http://localhost:1234
+4. **Lista de alunos:** http://localhost:1234/alunos
+5. **Lista de cursos:** http://localhost:1234/cursos
+6. **Lista de instrumentos:** http://localhost:1234/instrumentos
+7. **Ver o curso CB2:** http://localhost:1234/cursos/CB2
