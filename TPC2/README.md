@@ -19,21 +19,22 @@
 
 
 ## Lista de Resultados
-- O ficheiro db.json corresponde ao dataset da escola de música e consiste no conjunto de dados que servem o website. Através desse dataset foi possível criar o json-server.
-- O ficheiro server.js consiste no servidor em node.js, que utiliza o módulo HTTP para atender a pedidos e respostas. Este servidor consome a API de dados fornecida pelo json-server, o que permite a exibição de páginas HTML com as informações sobre os alunos, cursos e instrumentos. A porta utilizada para os clientes se comunicarem é a porta nº 1234. Foram implementadas várias páginas, tais como:
-    i. '/' que corresponde à página inicial do site. Contém 3 botões principais, um para listar os alunos, outro para listar os cursos e um terceiro para listar os instrumentos.
-    ii. '/alunos' que corresponde a uma tabela com a informação de todos os alunos, ordenados pelo nome. O id do aluno é clicável.
-    iii. '/alunos/id' onde id corresponde ao id do aluno. É a página individual de um aluno com o id indicado.
-    iv. '/cursos' corresponde a uma tabela constituída pela informação dos cursos, onde o id do curso é clicável.
-    v. '/cursos/id' onde id é o id do curso. Corresponde à página de um curso específico, onde é apresentada uma lista dos alunos que frequentam esse curso.
-    vi. '/instrumentos' é a página que contém a tabela com a informação de todos os instrumentos.
-    vii. '/instrumentos/id' onde id é o id do instrumento. Corresponde à página de um instrumento específico e contém a lista dos alunos que tocam esse instrumento.
-- Em cada página é apresentado um botão "Voltar" que, ao ser clicado, permite voltar à página anterior.
-- O ficheiro mypages.js contém as várias funções que geram as páginas HTML necessárias ao website. Essas funções permitem listar/visualizar os dados.
-- É utilizado o w3.css para dar estilo/beleza a essas páginas.
+1. O ficheiro db.json corresponde ao dataset da escola de música e consiste no conjunto de dados que servem o website. Através desse dataset foi possível criar o json-server.
+2. O ficheiro server.js consiste no servidor em node.js, que utiliza o módulo HTTP para atender a pedidos e respostas. Este servidor consome a API de dados fornecida pelo json-server, o que permite a exibição de páginas HTML com as informações sobre os alunos, cursos e instrumentos. A porta utilizada para os clientes se comunicarem é a porta nº 1234. Foram implementadas várias páginas, tais como:
+    - '/' que corresponde à página inicial do site. Contém 3 botões principais, um para listar os alunos, outro para listar os cursos e um terceiro para listar os instrumentos.
+    - '/alunos' que corresponde a uma tabela com a informação de todos os alunos, ordenados pelo nome. O id do aluno é clicável.
+    - '/alunos/id' onde id corresponde ao id do aluno. É a página individual de um aluno com o id indicado.
+    - '/cursos' corresponde a uma tabela constituída pela informação dos cursos, onde o id do curso é clicável.
+    - '/cursos/id' onde id é o id do curso. Corresponde à página de um curso específico, onde é apresentada uma lista dos alunos que frequentam esse curso.
+    - '/instrumentos' é a página que contém a tabela com a informação de todos os instrumentos.
+    - '/instrumentos/id' onde id é o id do instrumento. Corresponde à página de um instrumento específico e contém a lista dos alunos que tocam esse instrumento.
+3. Em cada página é apresentado um botão "Voltar" que, ao ser clicado, permite voltar à página anterior.
+4. O ficheiro mypages.js contém as várias funções que geram as páginas HTML necessárias ao website. Essas funções permitem listar/visualizar os dados.
+5. É utilizado o w3.css para dar estilo/beleza a essas páginas.
 - ![db.json](db.json)
 - ![server.js](server.js)
 - ![mypages.js](mypages.js)
+- "[w3.css](w3.css)
 
 ## Utilização
 1. **Executar o json-server:** json-server --watch db.json
