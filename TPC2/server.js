@@ -32,11 +32,10 @@ http.createServer(async (req, res) => {
             else if(req.url.match(/\/alunos\/.+/)){
                 var id = req.url.split("/")[2]
                 
-                // Buscar os dados do aluno com o ID específico
                 var aluno = (await axios.get('http://localhost:3000/alunos/' + id)).data
             
                 res.writeHead(200, {'Content-Type': 'text/html;charset=utf-8'})
-                res.write(genAluno(aluno)) // Função que gera a página com os dados do aluno
+                res.write(genAluno(aluno))
                 res.end()
             
         }
@@ -60,7 +59,6 @@ http.createServer(async (req, res) => {
             else if(req.url.match(/\/cursos\/.+/)){
                 var id = req.url.split("/")[2]
                 
-                // Buscar os dados do aluno com o ID específico
                 var curso = (await axios.get('http://localhost:3000/cursos/' + id)).data
                 var alunos = (await axios.get(`http://localhost:3000/alunos?_sort=name`)).data
                 var alunos_lista = []
@@ -74,7 +72,7 @@ http.createServer(async (req, res) => {
 
                 
                 res.writeHead(200, {'Content-Type': 'text/html;charset=utf-8'})
-                res.write(genCurso(curso, alunos_lista)) // Função que gera a página com os dados do aluno
+                res.write(genCurso(curso, alunos_lista))
                 res.end()
             
         }
@@ -98,7 +96,6 @@ http.createServer(async (req, res) => {
             else if(req.url.match(/\/instrumentos\/.+/)){
                     var id = req.url.split("/")[2]
                     
-                    // Buscar os dados do aluno com o ID específico
                     var instrumento = (await axios.get('http://localhost:3000/instrumentos/' + id)).data
                     var alunos = (await axios.get(`http://localhost:3000/alunos?_sort=name`)).data
                     var alunosL = []
@@ -112,7 +109,7 @@ http.createServer(async (req, res) => {
     
                     
                     res.writeHead(200, {'Content-Type': 'text/html;charset=utf-8'})
-                    res.write(genInstrumento(instrumento, alunosL)) // Função que gera a página com os dados do aluno
+                    res.write(genInstrumento(instrumento, alunosL))
                     res.end()   
             }
 
