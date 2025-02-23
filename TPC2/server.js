@@ -1,6 +1,6 @@
 const http = require('http')
 const axios = require('axios')
-const { genMainPage, genAlunos, genAluno, genCursos, genCurso, genInstrumentos, genInstrumento, genPaginaErro} = require('./mypages.js');
+const { genMainPage, genAlunos, genAluno, genCursos, genCurso, genInstrumentos, genInstrumento} = require('./mypages.js');
 const fs = require('fs')
 
 http.createServer(async (req, res) => {
