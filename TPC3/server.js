@@ -1,7 +1,3 @@
-// alunos_server.js
-// EW2024 : 04/03/2024
-// by jcr
-
 var http = require('http')
 var axios = require('axios')
 const { parse } = require('querystring');
@@ -106,6 +102,7 @@ var alunosServer = http.createServer((req, res) => {
                         .then(() => {
                             res.writeHead(201, {'Content-Type': 'text/html; charset=utf-8'})
                             res.write(`<p>Registo eliminado</p>`)
+                            res.write(templates.botaoPage())
                             res.end()
                         })
                         .catch(erro => {
@@ -131,6 +128,7 @@ var alunosServer = http.createServer((req, res) => {
                                 .then( resp => {
                                     res.writeHead(201, {'Content-Type': 'text/html; charset=utf-8'})
                                     res.write(`<p>Registo inserido: ${JSON.stringify(resp.data)}</p>`)
+                                    res.write(templates.botaoPage())
                                     res.end()
                                 })
                                 .catch(erro => {
@@ -156,6 +154,7 @@ var alunosServer = http.createServer((req, res) => {
                                 .then( resp => {
                                     res.writeHead(200, {'Content-Type': 'text/html; charset=utf-8'})
                                     res.write(`<p>Registo alterado: ${JSON.stringify(resp.data)}</p>`)
+                                    res.write(templates.botaoPage())
                                     res.end()
                                 })
                                 .catch(erro => {
@@ -178,6 +177,7 @@ var alunosServer = http.createServer((req, res) => {
                         .then(() => {
                             res.writeHead(201, {'Content-Type': 'text/html; charset=utf-8'})
                             res.write(`<p>Registo eliminado</p>`)
+                            res.write(templates.botaoPage())
                             res.end()
                         })
                         .catch(erro => {
