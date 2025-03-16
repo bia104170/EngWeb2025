@@ -1,0 +1,23 @@
+extends layout
+
+block content
+  .w3-card
+    header.w3-container.w3-teal
+      h1 Nome do ator: #{ator}
+      h4 Filmes em que #{ator} participou
+    .w3-container 
+        table.w3-table-all 
+            tr
+                th Título 
+                th Ano 
+                th Géneros 
+            each f in filmes 
+                tr
+                    td= f.id 
+                    td= f.year 
+                    td 
+                       ul.w3-ul
+                           each g in f.genres 
+                               li=g
+    a(href='/filmes' class="w3-button w3-round") Voltar
+        

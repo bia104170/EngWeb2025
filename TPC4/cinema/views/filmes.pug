@@ -1,0 +1,38 @@
+extends layout
+
+block content
+  .w3-card
+    header.w3-container.w3-teal
+      h1
+          span Lista de filmes
+    a(href='/' class="w3-button w3-round") Voltar
+    .w3-container 
+        table.w3-table-all 
+            tr
+                th Ano 
+                th Título 
+                th Elenco 
+                th Géneros 
+                th Ações
+            each f in lfilmes 
+                tr
+                    td= f.year 
+                    td= f.id 
+                    td
+                       ul.w3-ul 
+                           each ator in f.cast 
+                               li
+                                    a(href=`/filmes/${encodeURIComponent(ator)}`) #{ator}
+                    td 
+                       ul.w3-ul
+                           each g in f.genres 
+                               li=g
+                    td 
+                        span
+                            a(href=`/filmes/edit/${f.id}` class="w3-button w3-green w3-round" style="width:100px;") Edit
+                        span
+                        span 
+                            a(href=`/filmes/delete/${f.id}` class="w3-button w3-red w3-round" style="width:100px;") Delete 
+                        span 
+    a(href='/' class="w3-button w3-round") Voltar
+        
