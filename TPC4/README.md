@@ -31,7 +31,7 @@ de modo a ser possível realizar algumas operações, o "title" nos registos do 
     - '/filmes/edit/id' que corresponde ao formulário para editar as informações do filme, onde id corresponde ao título do filme.
     - 'filmes/delete/id' que corresponde à página de eliminar um registo de um filme, onde id corresponde ao título do filme
 6. Em algumas páginas é apresentado um botão "Voltar" que, ao ser clicado, permite voltar à página anterior.
-7. É utilizado o ![w3.css](w3.css) para dar estilo/beleza às várias páginas.
+7. É utilizado o ![w3.css](cinema/public/stylesheets/w3.css) para dar estilo/beleza às várias páginas.
 
 
 ## Utilização
