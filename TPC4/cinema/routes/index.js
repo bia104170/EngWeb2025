@@ -2,10 +2,6 @@ var express = require('express');
 var axios = require('axios')
 var router = express.Router();
 
-/* GET home page. */
-// REQ - PEDIDO QUE FOI FEITO
-// RES - RESPOSTA QUE VOU DAR
-// NEXT - RESPOSTA QUE VOU DAR A OUTRO COISO
 router.get('/', function(req, res, next) {
   var date = new Date().toISOString().substring(0, 16)
   res.render('index', {title: 'Página Inicial',
@@ -130,7 +126,7 @@ router.post('/filmes/delete/:id', function(req, res) {
 
   axios.delete(`http://localhost:3000/filmes/${idFilme}`)
     .then(() => {
-      res.redirect('/filmes'); // Redireciona para a lista de filmes após a exclusão
+      res.redirect('/filmes');
     })
     .catch(error => {
       console.error(error);
