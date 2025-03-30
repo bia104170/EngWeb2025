@@ -1,0 +1,37 @@
+extends layout 
+
+block content 
+    .w3-card-4 
+        header.w3-container.w3-blue-grey
+            a.w3-button.w3-circle.w3-xlarge.w3-light-gray.w3-margin-top(href="/" title="Voltar")
+                i.fa.fa-arrow-left.w3-text-blue-grey
+            
+            .w3-margin-left
+                h2 Visualizar Entidade
+
+        .w3-container
+            p 
+                strong NIPC:  
+                | #{nipc}
+            p 
+                strong Nome:  
+                | #{nome}
+            p 
+                strong Valor dos contratos:  
+                | #{valor}€
+            table.w3-table-all 
+                tr
+                    th ID 
+                    th Objeto
+                    th Data de Celebração 
+                    th Preço Contratual 
+                    th NIPC Entidade Comunicante 
+                    th Entidade Comunicante  
+                each contrato in listacontratos 
+                    tr 
+                        td= contrato._id
+                        td= contrato.objectoContrato 
+                        td= contrato.dataCelebracaoContrato 
+                        td= contrato.precoContratual
+                        td= contrato.NIPC_entidade_comunicante 
+                        td= contrato.entidade_comunicante

@@ -1,0 +1,35 @@
+extends layout 
+
+block content 
+    .w3-card-4 
+        header.w3-container.w3-blue-grey
+            h1 Lista de Contratos  
+
+    .w3-container
+        .w3-left.w3-margin-top.w3-margin-bottom
+            a.w3-button.w3-circle.w3-xlarge.w3-blue-grey(href="/registo" title="Adicionar Contrato")
+                i.fa.fa-plus
+
+        .w3-container
+            table.w3-table-all 
+                tr
+                    th ID 
+                    th Objeto Contrato
+                    th Data de Celebração 
+                    th Preço Contratual 
+                    th NIPC Entidade Comunicante 
+                    th Entidade Comunicante  
+                    th Actions
+                each contrato in lista 
+                    tr 
+                        td
+                            a(href="/" + contrato._id)=contrato._id
+                        td= contrato.objectoContrato 
+                        td= contrato.dataCelebracaoContrato 
+                        td= contrato.precoContratual
+                        td
+                            a(href="/entidades/" + contrato.NIPC_entidade_comunicante)=contrato.NIPC_entidade_comunicante 
+                        td= contrato.entidade_comunicante 
+                        td
+                                a(href="/edit/" + contrato._id class="w3-button w3-green w3-round" style="width:100px") Editar 
+                                a(href="/delete/" + contrato._id class="w3-button w3-red w3-round" style="width:100px") Apagar

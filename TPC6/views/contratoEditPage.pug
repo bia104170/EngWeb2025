@@ -1,0 +1,50 @@
+extends layout 
+
+block content
+    .w3-card-4 
+        header.w3-container.w3-blue-grey
+            a.w3-button.w3-circle.w3-xlarge.w3-light-gray.w3-margin-top(href='/' title="Voltar")
+                i.fa.fa-arrow-left.w3-text-blue-grey 
+
+            .w3-margin-left
+                h2  Editar contrato
+       
+        form.w3-container(method="POST")
+            fieldset
+                legend Dados do contrato
+                label 
+                    b ID
+                input.w3-input.w3-round(type="text" name="_id" readonly value= contrato._id)
+                label 
+                    b Número anúncio
+                input.w3-input.w3-round(type="text" name="nAnuncio" value= contrato.nAnuncio)
+                label 
+                    b Tipo procedimento
+                input.w3-input.w3-round(type="text" name="tipoprocedimento" value= contrato.tipoprocedimento)
+                label 
+                    b Objeto contrato
+                input.w3-input.w3-round(type="text" name="objectoContrato" value= contrato.objectoContrato)
+                label 
+                    b Data publicação
+                input.w3-input.w3-round(type="text" name="dataPublicacao" value= contrato.dataPublicacao)
+                label 
+                    b Data celebração contrato
+                input.w3-input.w3-round(type="text" name="dataCelebracaoContrato" value= contrato.dataCelebracaoContrato)
+                label 
+                    b Preço contratual
+                input.w3-input.w3-round(type="text" name="precoContratual" value= contrato.precoContratual)
+                label 
+                    b Prazo execução
+                input.w3-input.w3-round(type="text" name="prazoExecucao" value= contrato.prazoExecucao)
+                label 
+                    b NIPC
+                input.w3-input.w3-round(type="text" name="NIPC_entidade_comunicante" value= contrato.NIPC_entidade_comunicante)
+                label 
+                    b Entidade comunicante
+                input.w3-input.w3-round(type="text" name="entidade_comunicante" value= contrato.entidade_comunicante)
+                label 
+                    b Fundamentação
+                input.w3-input.w3-round(type="text" name="fundamentacao" value= contrato.fundamentacao)
+
+            br
+            button.w3-button.w3-amber.w3-round.w3-margin-bottom.w3-large(type="submit") Guardar Alterações
