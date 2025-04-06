@@ -1,0 +1,50 @@
+extends layout 
+
+block content 
+    .w3-card-4 
+        header.w3-container.w3-light-blue
+            a.w3-button.w3-circle.w3-xlarge.w3-light-gray.w3-margin-top(href="/" title="Voltar")
+                i.fa.fa-arrow-left.w3-text-light-blue
+            
+            .w3-margin-left
+                h2 Visualizar autor
+
+    .w3-container
+
+        p 
+            strong ID: 
+            | #{dados._id}
+
+        p  
+            strong Nome: 
+            | #{dados.name} 
+
+        p 
+            strong Número de livros: 
+            | #{dados.books_count} 
+
+        h3 
+            b Livros publicados  
+        
+        table.w3-table-all 
+            tr
+                th ID do livro
+                th Título 
+                th Série
+                th Géneros
+                th Data publicação 
+            
+            each book in dados.books
+                tr 
+                    td
+                        a(href="/" + book.bookId)=book.bookId
+                    td= book.title
+                    td= book.series
+                    td= book.genres
+                    td= book.publishDate
+
+
+
+
+
+        

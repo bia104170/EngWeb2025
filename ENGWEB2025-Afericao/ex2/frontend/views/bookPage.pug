@@ -1,0 +1,107 @@
+extends layout 
+
+block content 
+    .w3-card-4 
+        header.w3-container.w3-light-blue
+            a.w3-button.w3-circle.w3-xlarge.w3-light-gray.w3-margin-top(href="/" title="Voltar")
+                i.fa.fa-arrow-left.w3-text-light-blue
+            
+            .w3-margin-left
+                h2 Visualizar livro
+
+    .w3-container
+
+        h3 
+            b ID 
+        p= dados._id
+
+        h3 
+            b Autor
+        p= dados.author
+
+        h3 
+            b Descrição
+        p= dados.description
+
+        if dados.coverImg
+        img(src=dados.coverImg, alt="Capa do livro", style="max-width:200px") 
+
+        h3 
+            b Detalhes
+
+        ul.w3-ul.w3-card-4
+            li 
+                b Título: 
+                | #{dados.title}
+            li    
+                b Séries: 
+                | #{dados.series}
+            li
+                b Linguagem: 
+                | #{dados.language}
+            li
+                b ISBN: 
+                | #{dados.isbn}
+            li
+                b Formato do livro: 
+                | #{dados.bookFormat}
+            li
+                b Edição: 
+                | #{dados.edition}
+            li
+                b Páginas: 
+                | #{dados.pages}
+            li
+                b Editora: 
+                | #{dados.publisher}
+            li
+                b Data publicação: 
+                | #{dados.publishDate}
+            li
+                b Primeira data publicação: 
+                | #{dados.firstPublishDate}
+            li 
+                b Rating: 
+                | #{dados.rating}
+            li
+                b Número de avaliações: 
+                | #{dados.numRatings}
+            li
+                b BBE score: 
+                | #{dados.bbeScore}
+            li
+                b BBE votos: 
+                | #{dados.bbeVotes}
+            li
+                b Percentagem de gostos: 
+                | #{dados.likedPercent}
+            li 
+                b Preço do livro: 
+                | #{dados.price}
+
+        h3 
+            b Géneros
+        ul.w3-ul.w3-card-4
+            each genre in dados.genres
+                li= genre
+        
+        h3 
+            b Personagens
+        ul.w3-ul.w3-card-4
+            each character in dados.characters
+                li= character
+
+        h3
+            b Prémios
+        ul.w3-ul.w3-card-4
+            each award in dados.awards
+                li= award
+        
+        h3 
+            b Configuração
+        ul.w3-ul.w3-card-4
+            each setting in dados.setting
+                li= setting
+        
+
+        
