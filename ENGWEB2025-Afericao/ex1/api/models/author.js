@@ -1,6 +1,6 @@
 var mongoose = require('mongoose')
 
-//Tabela de Livros
+
 var authorSchema = new mongoose.Schema({
     _id : String,
     name: String,

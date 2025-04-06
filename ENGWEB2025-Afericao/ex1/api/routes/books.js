@@ -25,13 +25,13 @@ router.get('/', function(req, res) {
 
 router.get('/genres', function(req, res) {
   Livro.getGenres()
-      .then(data => res.status(200).json(data)) // Retorna diretamente a lista ordenada
+      .then(data => res.status(200).json(data))
       .catch(error => res.status(500).json({ error: error.message }));
 });
 
 router.get('/characters', function(req, res) {
   Livro.getCharacters()
-      .then(data => res.status(200).json(data)) // Retorna diretamente a lista ordenada
+      .then(data => res.status(200).json(data))
       .catch(error => res.status(500).json({ error: error.message }));
 });
 
