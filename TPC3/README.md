@@ -17,9 +17,9 @@
     - A página de alunos contém também 2 botões principais: o botão de "Edit", para editar a informação de um aluno, e o botão "Delete" para apagar o registo desse aluno. Contém também o botão com o símbolo "+" que permite criar um novo aluno.
 
 ## Lista de Resultados
-1. O ficheiro ![alunos.csv](alunos.csv) corresponde ao dataset em csv. De modo a facilitar a sua manipulação, 
-fez-se a conversão do dataset dos alunos em csv para ![alunos.json](alunos.json). Através do dataset em json foi possível criar o json-server.
-2. O ficheiro ![server.js](server.js) consiste no servidor em node.js, que utiliza o módulo HTTP para atender a pedidos e respostas. 
+1. O ficheiro [alunos.csv](alunos.csv) corresponde ao dataset em csv. De modo a facilitar a sua manipulação, 
+fez-se a conversão do dataset dos alunos em csv para [alunos.json](alunos.json). Através do dataset em json foi possível criar o json-server.
+2. O ficheiro [server.js](server.js) consiste no servidor em node.js, que utiliza o módulo HTTP para atender a pedidos e respostas. 
 3. Este servidor consome a API de dados fornecida pelo json-server, o que permite a exibição de páginas HTML com as informações necessárias
 4. A porta utilizada para os clientes se comunicarem é a porta nº 7777. 
 5. Foram implementadas várias páginas, tais como:
@@ -30,8 +30,8 @@ fez-se a conversão do dataset dos alunos em csv para ![alunos.json](alunos.json
     - '/alunos/edit/id' que corresponde ao formulário para editar as informações do aluno, onde id corresponde ao seu número de aluno
     - 'alunos/delete/id' que corresponde à página de eliminar um registo do aluno, onde id corresponde ao seu número de aluno
 3. Em cada página é apresentado um botão "Voltar" que, ao ser clicado, permite voltar à página anterior.
-4. O ficheiro ![templates.js](templates.js) contém as várias funções que geram as páginas HTML necessárias ao website.
-5. É utilizado o ![w3.css](w3.css) para dar estilo/beleza a essas páginas.
+4. O ficheiro [templates.js](templates.js) contém as várias funções que geram as páginas HTML necessárias ao website.
+5. É utilizado o [w3.css](w3.css) para dar estilo/beleza a essas páginas.
 
 
 ## Utilização

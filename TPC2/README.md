@@ -31,10 +31,10 @@
 3. Em cada página é apresentado um botão "Voltar" que, ao ser clicado, permite voltar à página anterior.
 4. O ficheiro mypages.js contém as várias funções que geram as páginas HTML necessárias ao website.
 5. É utilizado o w3.css para dar estilo/beleza a essas páginas.
-- ![db.json](db.json)
-- ![server.js](server.js)
-- ![mypages.js](mypages.js)
-- ![w3.css](w3.css)
+- [db.json](db.json)
+- [server.js](server.js)
+- [mypages.js](mypages.js)
+- [w3.css](w3.css)
 
 ## Utilização
 1. **Executar o json-server:** json-server --watch db.json

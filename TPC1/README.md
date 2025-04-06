@@ -21,10 +21,10 @@ O ficheiro dataset.py gera o dataset da oficina de reparações mas que contém,
 uma lista com os veículos e outra lista com as intervenções.
 O ficheiro dataset_reparacoes_novo.json corresponde ao dataset gerado pelo ficheiro dataset.py.
 Por fim, o ficheiro server.js é o servidor criado em Node.js que responde com páginas web em HTML a pedidos HTTP.
-- ![Ficheiro dataset dado](dataset_reparacoes.json)
-- ![Ficheiro gera o dataset](dataset.py)
-- ![Ficheiro novo dataset](dataset_reparacoes_novo.json)
-- ![Servidor (server.js)](server.js)
+- [Ficheiro dataset dado](dataset_reparacoes.json)
+- [Ficheiro gera o dataset](dataset.py)
+- [Ficheiro novo dataset](dataset_reparacoes_novo.json)
+- [Servidor (server.js)](server.js)
 
 ## Utilização
 1. **Executar o json-server:** json-server --watch dataset_reparacoes_novo.json

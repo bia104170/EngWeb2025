@@ -26,11 +26,11 @@
 8.  Cada página apresenta um botão, no canto superior esquerdo, com uma "seta" que permite voltar à página anterior.
 
 ### Queries
-As querys pedidas no exercício 1.2 encontram-se no ficheiro: ![queries.md](queries.md).
+As querys pedidas no exercício 1.2 encontram-se no ficheiro: [queries.md](queries.md).
 
 ### MongoDB
 1. Para o mongoDB foi criado um container no docker cujo nome é mongoEW.
-2. De modo a que o ficheiro com o dataset em json fosse reconhecido pelo mongoDB, foram feitas alterações ao ficheiro json original, ficando apenas uma lista com os alunos. O ficheiro em json alterado é ![db.json](apiContratos/db.json).
+2. De modo a que o ficheiro com o dataset em json fosse reconhecido pelo mongoDB, foram feitas alterações ao ficheiro json original, ficando apenas uma lista com os alunos. O ficheiro em json alterado é [db.json](apiContratos/db.json).
 3. Este ficheiro foi importado para o docker e foi criada a base de dados EW2025 e, dentro desta, existe a coleção contratos que contém os dados do dataset.
 4. Os comandos utilizados para realizar as operações referidas foram, fora do container:
     - docker cp db.json mongoEW:/tmp (para copiar o dataset)
@@ -40,7 +40,7 @@ As querys pedidas no exercício 1.2 encontram-se no ficheiro: ![queries.md](quer
     - mongoimport -d EW2025 -c contratos db.json --jsonArray (para importar os dados para uma coleção)
 
 ### API de dados
-1. O servidor da API de dados encontra-se em ![apiContratos](apiContratos/)
+1. O servidor da API de dados encontra-se em [apiContratos](apiContratos/)
 2. O servidor da API de dados contém três partes principais:
     - controllers, que contém a lógica das várias operações a realizar na base de dados e interage com o model.
     - models, que define como os dados são estruturados na base de dados.
@@ -50,7 +50,7 @@ As querys pedidas no exercício 1.2 encontram-se no ficheiro: ![queries.md](quer
 1. Este servidor utiliza Express e está à escuta na porta 16001.
 2. Neste servidor são implementados os métodos GET e POST para interagir com a API de dados.
 3. Existem duas componentes principais neste servidor que são:
-    - routes, que em ![index.js](routes/index.js) contém tanto a rota para a página inicial da aplicação web como as restantes rotas para as operações sobre os contratos. 
+    - routes, que em [index.js](routes/index.js) contém tanto a rota para a página inicial da aplicação web como as restantes rotas para as operações sobre os contratos. 
     - views que contém os vários ficheiros em PUG que permitem gerar as páginas HTML da aplicação.
 
 ## Utilização

@@ -25,7 +25,7 @@
 
 ### MongoDB
 1. Para o mongoDB foi criado um container no docker cujo nome é mongoTPC6.
-2. De modo a que o ficheiro com o dataset em json fosse reconhecido pelo mongoDB, foram feitas alterações ao ficheiro json original, ficando apenas uma lista com os alunos. O ficheiro em json alterado é ![alunos.json](apiAlunos/alunos.json).
+2. De modo a que o ficheiro com o dataset em json fosse reconhecido pelo mongoDB, foram feitas alterações ao ficheiro json original, ficando apenas uma lista com os alunos. O ficheiro em json alterado é [alunos.json](apiAlunos/alunos.json).
 3. Este ficheiro foi importado para o docker e foi criada a base de dados EWTPC6 e, dentro desta, existe a coleção alunos que contém os dados do dataset.
 4. Os comandos utilizados para realizar as operações referidas foram, fora do container:
     - docker cp alunos.json mongoTPC6:/tmp (para copiar o dataset)
@@ -35,7 +35,7 @@
     - mongoimport -d EWTPC6 -c alunos alunos.json --jsonArray (para importar os dados para uma coleção)
 
 ### API de dados
-1. O servidor da API de dados encontra-se em ![apiAlunos](apiAlunos/)
+1. O servidor da API de dados encontra-se em [apiAlunos](apiAlunos/)
 2. O servidor da API de dados contém três partes principais:
     - controllers, que contém a lógica das várias operações a realizar na base de dados e interage com o model.
     - models, que define como os dados são estruturados na base de dados.
@@ -45,7 +45,7 @@
 1. Este servidor utiliza Express e está à escuta na porta 1234.
 2. Neste servidor são implementados os métodos GET e POST para interagir com a API de dados.
 3. Existem duas componentes principais neste servidor que são:
-    - routes, que em ![index.js](routes/index.js) contém a rota para a página inicial da aplicação web e em ![alunos.js](routes/alunos.js) contém as várias rotas para realizar operações sobre os alunos. 
+    - routes, que em [index.js](routes/index.js) contém a rota para a página inicial da aplicação web e em [alunos.js](routes/alunos.js) contém as várias rotas para realizar operações sobre os alunos. 
     - views que contém os vários ficheiros em PUG que permitem gerar as páginas HTML da aplicação.
 
 ## Utilização

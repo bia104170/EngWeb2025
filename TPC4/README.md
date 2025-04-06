@@ -19,9 +19,9 @@
     - A página para eliminar o filme contém a opção de confirmar que pretende eliminar o filme ou a opção de cancelar a ação.
 
 ## Lista de Resultados
-1. O ficheiro ![cinema.json](cinema/cinema.json) corresponde ao dataset. Uma vez que este dataset não continha o campo "id" em cada registo, 
+1. O ficheiro [cinema.json](cinema/cinema.json) corresponde ao dataset. Uma vez que este dataset não continha o campo "id" em cada registo, 
 de modo a ser possível realizar algumas operações, o "title" nos registos do dataset foi substituído por "id". Desse modo, no formulário de edit, não é possível modificar o título do filme.
-2. A pasta routes contém o ficheiro ![index.js](cinema/routes/index.js) onde são definidas todas as rotas no site.
+2. A pasta routes contém o ficheiro [index.js](cinema/routes/index.js) onde são definidas todas as rotas no site.
 3. A pasta views contém vários ficheiros em pug que permitem gerar as páginas do site.
 4. A porta utilizada para os clientes se comunicarem é a porta nº 1234. 
 5. Foram implementadas várias páginas, tais como:
@@ -31,7 +31,7 @@ de modo a ser possível realizar algumas operações, o "title" nos registos do 
     - '/filmes/edit/id' que corresponde ao formulário para editar as informações do filme, onde id corresponde ao título do filme.
     - 'filmes/delete/id' que corresponde à página de eliminar um registo de um filme, onde id corresponde ao título do filme
 6. Em algumas páginas é apresentado um botão "Voltar" que, ao ser clicado, permite voltar à página anterior.
-7. É utilizado o ![w3.css](cinema/public/stylesheets/w3.css) para dar estilo/beleza às várias páginas.
+7. É utilizado o [w3.css](cinema/public/stylesheets/w3.css) para dar estilo/beleza às várias páginas.
 
 
 ## Utilização
